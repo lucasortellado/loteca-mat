@@ -1,5 +1,5 @@
 var numSort = [];
-var cont = 0;
+var numEsco = [];
 
 
 function sorteio() {
@@ -15,4 +15,17 @@ function sorteio() {
     }
 
 
+}
+
+function getValor(valor, pos) {
+    valor = Number(valor);
+    if (valor <= 0 || valor >= 60) {
+        alert("Numero invalido, digite um número entre 1 e 60");
+    } else if (numEsco.includes(valor)) {
+        alert("Número repetido, escolha um outro número!");
+
+    }else{
+        numEsco[pos] =valor;
+        console.log(numEsco);
+    }
 }
